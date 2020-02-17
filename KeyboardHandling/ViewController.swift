@@ -81,7 +81,7 @@ class ViewController: UIViewController {
         originalYConstraint = pursuitLogoCenterYConstraint // save original value
         print(originalYConstraint.constant)
         pursuitLogoCenterYConstraint.constant -= (height * 0.80)
-         // animation for sign to move smooth
+         
         // animation for sign to move smooth
         UIView.animate(withDuration: 0.5) {// could use usingSpringWithDamping for bounce
             self.view.layoutIfNeeded()
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
         keyboardIsVisible = true
     }
     
-    
+     // animation for sign to move smooth
 
     private func resetUI() {
         keyboardIsVisible = false
